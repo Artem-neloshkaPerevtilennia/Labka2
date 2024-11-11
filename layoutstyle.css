@@ -8,105 +8,136 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-}
-
-.main__wrapper {
-  min-height: 100vh;
-  display: flow-root;
-}
-
-.nav-bar {
-  width: 100%;
-  height: 25vh;
-  display: flow-root;
-  background-color: lightblue;
-  position: relative;
-}
-
-.home-logo {
-  float: left;
-  width: 25%;
-}
-
-.task-list {
-  float: left;
-  width: 50%;
-}
-
-.motto {
-  float: left;
-  background-color: white;
-  width: 25%;
-  margin: auto 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.content {
-  display: flow-root;
-  float: left;
-  width: 100%;
-  min-height: 75%;
 }
 
 .wrapper {
-  display: flow-root;
-  float: left;
-  min-height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: lightblue;
+  min-height: 25%;
+  width: 100%;
+}
+
+.tasks-cell {
   width: 75%;
+  height: 100%;
 }
 
-.right-sidebar {
-  float: left;
-  width: 25%;
-  min-height: 75vh;
-  background-color: lightcoral;
-}
-
-.left-sidebar {
-  display: flow-root;
-  float: left;
-  width: 33%;
-  min-height: 50vh;
-}
-
-.side-menu {
-  float: left;
-  background-color: lightcoral;
-  min-height: 25vh;
+.tasks {
   width: 100%;
-}
-
-.sidebar-widget {
-  float: left;
-  background-color: lightgreen;
-  min-height: 25vh;
-  width: 100%;
-}
-
-.main-content {
-  display: flow-root;
-  float: right;
-  background-color: white;
-  width: 67%;
-  min-height: 50vh;
+  height: 100%;
   position: relative;
 }
 
-.footer {
-  float: left;
-  background-color: lightblue;
-  height: 25vh;
+.tasks-list {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.motto-cell {
+  width: 25%;
+  height: 100%;
+}
+
+.motto {
+  width: 70%;
+  min-height: 70%;
+  background-color: white;
+  margin: 3%;
+}
+
+.content {
+  min-height: 75%;
   width: 100%;
 }
 
-.outro {
-  float: left;
-  background-color: white;
+.content-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.main-content-row {
+  min-height: 50%;
+  width: 66%;
+}
+
+.main-content-cell {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  width: 34%;
+  height: 100%;
+}
+
+.side-menu {
   height: 50%;
-  width: 25vw;
-  margin: 0 3%;
+  width: 100%;
+  background-color: lightsalmon;
+}
+
+.sidebar-widget {
+  height: 50%;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+.main-content {
+  width: 50%;
+  min-height: 50%;
+  background-color: white;
+}
+
+.right-sidebar-cell {
+  height: 100%;
+  width: 25%;
+}
+
+.right-sidebar {
+  height: 100%;
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.footer-row {
+  width: 100%;
+  min-height: 33%;
+  background-color: lightblue;
+}
+
+.outro-cell {
+  width: 25%;
+  height: 50%;
+}
+
+.outro {
+  height: 100%;
+  width: 100%;
+  margin: 3%;
+  background-color: white;
+}
+
+.footer-cell {
+  height: 100%;
+  width: 75%;
+  margin: 3%;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+}
+
+.words {
+  font-style: italic;
 }
